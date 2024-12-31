@@ -4,13 +4,19 @@
 }
 
 body{
-    max-width: 600px;
-    min-height: 100px;
+    max-width: 800px;
+    min-height: 95vh;
     margin: auto;
-    border: 1px solid black;
+    /* border: 1px solid black; */
 
-    font-size: 12px;
+    font-size: 14px;
     font-family: Arial, Helvetica, sans-serif;
+}
+
+@media  (max-width: 480px) {
+    body{
+        font-size: 12px;
+    }
 }
 
 /* Header */
@@ -30,9 +36,18 @@ body{
     padding-right: 0.5rem;
 }
 
+.header .home:hover{
+    cursor: pointer;
+}
+
 .header .portfolio{
     color: gray;
     padding-left: 0.5rem;
+}
+
+.header .portfolio:hover{
+    color: black;
+    cursor: pointer;
 }
 
 .header .navigation{
@@ -49,13 +64,33 @@ body{
 
 /* Essay container */
 .essay{
-    max-width: 420px;
+    max-width: 450px;
     padding: 1rem;
     margin: auto;
 }
+
+.essay figure {
+    text-align: center; /* Center the image and caption */
+    margin: 2rem 0; /* Add spacing around the figure */
+    width: 100%;
+    height: auto;
+
+}
+
+.essay figure img{
+    width: 100%;
+    height: auto;
+}
+
+.essay figcaption {
+    font-size: 0.75rem; /* Adjust the font size */
+    color: #555; /* Optional: Set a color for the caption */
+    margin-top: 0.25rem; /* Space between image and caption */
+    text-align: start;
+}
 /* Title */
 .title-container{
-
+    margin-bottom: 1.25rem;
 }
 .title-container .title{
     font-size: 1.5rem;
@@ -63,7 +98,6 @@ body{
 
 .title-container .metadata{
     display: flex;
-    margin-top: 0.25rem;
 }
 
 .title-container .metadata p{
@@ -82,7 +116,7 @@ body{
 /* Essay */
 .text-container p, .authors-note p{
     min-height: 1rem;
-    line-height: 1.05rem;
+    line-height: 1.2rem;
     letter-spacing: 0.05px;
     margin-bottom: 0.6rem;
 }
@@ -117,13 +151,13 @@ body{
     max-width: 85%;
     border: 1px solid red;
     margin-left: 1.5rem;
-    margin-top: 0.75rem;
     transition: opacity 0.5s ease, height 0.5s ease;
 }
 
 .footnotes .list[active] {
     opacity: 1;
     height: auto;
+    margin-top: 0.75rem;
 }
 
 
