@@ -1,0 +1,179 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    max-width: 600px;
+    min-height: 100px;
+    margin: auto;
+    border: 1px solid black;
+
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Header */
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+.header h2{
+    font-size: 1.25rem;
+}
+
+.header .home{
+    border-right: 2px solid black;
+    padding-right: 0.5rem;
+}
+
+.header .portfolio{
+    color: gray;
+    padding-left: 0.5rem;
+}
+
+.header .navigation{
+    display: flex;
+}
+
+.header .navigation .button{
+    height: 24px;
+    width: 24px;
+    border: 1px solid black;
+    border-radius: 100%;
+    margin-left: 0.5rem
+}
+
+/* Essay container */
+.essay{
+    max-width: 420px;
+    padding: 1rem;
+    margin: auto;
+}
+/* Title */
+.title-container{
+
+}
+.title-container .title{
+    font-size: 1.5rem;
+}
+
+.title-container .metadata{
+    display: flex;
+    margin-top: 0.25rem;
+}
+
+.title-container .metadata p{
+    margin-right: 2rem;
+}
+
+.title-container .metadata .date{
+    color: gray;
+}
+
+.title-container .metadata .share:hover{
+    color: gray;
+    cursor: pointer;
+}
+
+/* Essay */
+.text-container p, .authors-note p{
+    min-height: 1rem;
+    line-height: 1.05rem;
+    letter-spacing: 0.05px;
+    margin-bottom: 0.6rem;
+}
+
+
+/* Footnotes */
+.footnotes .title{
+    font-size: 12px;
+    font-weight: normal;
+    display: flex;
+    align-items: center;
+    max-width: 100px;
+    margin-top: 1.5rem;
+}
+
+.footnotes .title svg{
+    margin-left: 0.33rem;
+    height: 1.25rem;
+    width: auto;
+    transition: transform 0.3s ease;
+}
+
+.footnotes .title svg[active]{
+    transform: rotate(90deg);
+}
+
+.footnotes .list {
+    opacity: 0;
+    height: 0;
+    overflow: hidden;
+    min-height: 0px;
+    max-width: 85%;
+    border: 1px solid red;
+    margin-left: 1.5rem;
+    margin-top: 0.75rem;
+    transition: opacity 0.5s ease, height 0.5s ease;
+}
+
+.footnotes .list[active] {
+    opacity: 1;
+    height: auto;
+}
+
+
+.footnotes .list p{
+    line-height: 1.05rem;
+    letter-spacing: 0.05px;
+    margin-bottom: 0.6rem;
+    font-style: italic;
+}
+
+.footnotes .list p {
+    position: relative;
+    margin-left: 1.5rem;
+    text-indent: -0.75rem;
+}
+
+/* Authors note */
+.authors-note p{
+    color: grey;
+}
+
+/* Text styles */
+.italic{
+    font-style: italic;
+}
+
+.bold{
+    font-weight: bold;
+}
+
+/* Dividers */
+.primary-divider, .secondary-divider{
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+.primary-divider{
+    height: 0.1px;
+    background-color: grey;
+}
+
+.secondary-divider{
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.secondary-divider div{
+    height: 4px;
+    width: 4px;
+    border-radius: 100%;
+    background-color: grey;
+}
+
