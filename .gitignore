@@ -1,1 +1,30 @@
+# Python bytecode files
+*.pyc
+*.pyo
+__pycache__/
+
+# Virtual environment
 venv/
+env/
+
+# IDE/editor specific files
+.vscode/
+.idea/
+*.swp
+
+# Operating system files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Python egg files
+*.egg
+*.egg-info
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints
+
+personal-blog-446418-fc63a29b1c27.json
+test.ipynb
