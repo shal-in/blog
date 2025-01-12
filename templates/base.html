@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/styles.css">
+    {% block stylesheets %}{% endblock %}
+
+    <link rel="icon" href="/static/favicon/favicon.ico" type="image/x-icon">
+    <link rel="icon" sizes="16x16" href="/static/favicon/favicon-16x16.png">
+    <link rel="icon" sizes="32x32" href="/static/favicon/favicon-32x32.png">
+    <link rel="icon" sizes="192x192" href="/static/favicon/android-chrome-192x192.png">
+    <link rel="icon" sizes="512x512" href="/static/favicon/android-chrome-512x512.png">
+    <link rel="manifest" href="/static/favicon/site.webmanifest">
+    <link rel="apple-touch-icon" href="/static/favicon/apple-touch-icon.png">
+    <title>{% block title %}{% endblock %} | Shalin Ahasan</title>
+</head>
+<body>
+    <div class="header">
+        <h2 class="link confirm" href="/home"><span class="home">Blog</span><span class="portfolio">Shalin</span></h2>
+        <div class="navigation">
+            <!-- <div class="button"></div> -->
+            <div class="button link" id="x" href="https://x.com/shalin_1">
+                <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_81_45)">
+                    <path d="M14.2737 10.1635L23.2022 0H21.0872L13.3312 8.82302L7.14122 0H0L9.36257 13.3432L0 23.9999H2.11503L10.3002 14.6805L16.8387 23.9999H23.9799M2.87839 1.56189H6.12767L21.0856 22.5148H17.8355"/>
+                    </g>
+                    <defs>
+                    <clipPath id="clip0_81_45">
+                    <rect width="23.9799" height="24" fill="white"/>
+                    </clipPath>
+                    </defs>
+                    </svg>
+            </div>
+        </div>
+        
+    </div>
+
+    <div class="content">
+        {% block content %}{% endblock %}
+    </div>
+
+    <div class="footer">
+        <div class="left">
+            <p>Built from scratch by yours truly.</p>
+            <p>Thank you for reading.</p>
+            <p class="copyright">&copy; Shalin Ahasan, <span class=year>2025</span></p>
+        </div>
+
+        <div class="right">
+            <div class="button link" id="twitter" href="https://x.com/shalin_1">X/Twitter</div>
+            <div class="button link" id="home" href="/">Home</div>
+            <!-- <div class="button" id="portfolio">Portfolio</div> -->
+            <!-- <div class="button link" id="random" href="/random">Random post</div> -->
+        </div>
+    </div>
+
+    <script src="/static/universal.js"></script>
+    {% block scripts %}{% endblock %}
+</body>
+</html>

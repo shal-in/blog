@@ -16,7 +16,7 @@ if (footnotesEl) {
             footnotesTitleSVGEl.removeAttribute("active");
             footnotesListEl.removeAttribute("active");
         }
-    })
+    });
     
     footnotesTitleEl.addEventListener("mouseover", () => {
         footnotesTitleEl.style.cursor = "pointer";
